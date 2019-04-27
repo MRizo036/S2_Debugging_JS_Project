@@ -57,7 +57,7 @@ function verifyCrops() {
     try {
         for (var i = 0; i < 7; i++) {
             if (cropsFieldset.getElementsByTagName("input")[i].checked) {
-                cropscomplete = true;
+                cropsComplete = true;
                 messageElement.innerHTML = "";
                 testFormCompleteness();
                 i = 8;
@@ -71,8 +71,6 @@ function verifyCrops() {
         messageHeadElement.innerHTML = "";
         messageElement.innerHTML = message;
     }
-
-
 }
 
 /* verify months text box entry is between 1 and 12 */
